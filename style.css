@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Audiowide', cursive;
+}
+
+#sidebar-left {
+    float: left;
+    width: 20%;
+    height: 100vh;
+    background-color: #1e7bff;
+    text-align: center;
+    border-right: 2px outset #0f0f8b;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 16px 0px;
+    font-family: 'Monoton', cursive;
+    color: #ea4335;
+}
+
+#filter-search {
+    margin-top: 120px;
+    padding: 16px 0px;
+    background-color: #00b6ad;
+    border: 8px solid #96e4e0;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+hr {
+    margin: 16px 0px;
+}
+
+main {
+    float: left;
+    width: 80%;
+    height: 100vh;
+    background-color: #5b5bc5;
+    overflow-y: auto;
+}
+
+#container-main {
+    width: 80%;
+    margin: auto;
+    border: 2px solid red;
+}
+
+#container-main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.disc-card {
+    width: 170px;
+    height: 250px;
+    float: left;
+    margin: 16px;
+    background-color: #5dc7f0;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid #fff259;
+}
+
+.disc-card img {
+    width: 120px;
+    height: 120px;
+}
