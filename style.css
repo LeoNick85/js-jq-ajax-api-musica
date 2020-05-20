@@ -48,7 +48,6 @@ main {
 #container-main {
     width: 80%;
     margin: auto;
-    border: 2px solid red;
 }
 
 #container-main::after {
@@ -58,8 +57,8 @@ main {
 }
 
 .disc-card {
-    width: 170px;
-    height: 250px;
+    width: 180px;
+    height: 320px;
     float: left;
     margin: 16px;
     background-color: #5dc7f0;
@@ -74,4 +73,23 @@ main {
 .disc-card img {
     width: 120px;
     height: 120px;
+}
+
+.disc-card .title {
+    color: #505050;
+    margin: 8px 0px;
+}
+
+.disc-card .author {
+    text-decoration: underline;
+    color: #ea4335;
+    margin: 8px 0px;
+}
+
+.disc-card .genre {
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #4285f4;
+    margin: 8px 0px;
+    text-align: center;
 }
