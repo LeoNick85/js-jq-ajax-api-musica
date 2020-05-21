@@ -58,7 +58,7 @@ main {
 
 .disc-card {
     width: 180px;
-    height: 320px;
+    height: 350px;
     float: left;
     margin: 16px;
     background-color: #5dc7f0;
@@ -84,6 +84,11 @@ main {
     text-decoration: underline;
     color: #ea4335;
     margin: 8px 0px;
+}
+
+.disc-card div {
+    width: 100%;
+    text-align: center;
 }
 
 .disc-card .genre {

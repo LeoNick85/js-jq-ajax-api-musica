@@ -16,27 +16,40 @@
                 <h3>Filtra i risultati</h3>
                 <hr>
                 <p>Genere musicale</p>
-                <select class="" name="">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                <select class="" name="genre">
+                    <option value=""></option>
+                    <option value="jazz">Jazz</option>
+                    <option value="metal">Metal</option>
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
                 </select>
                 <hr>
                 <p>Autore</p>
-                <select class="" name="">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                <select class="" name="author">
+                    <option value=""></option>
+                    <option value="bon jovi">Bon Jovi</option>
+                    <option value="queen">Queen</option>
+                    <option value="sting">Sting</option>
+                    <option value="stevegaddband">Steve Gadd Band</option>
+                    <option value="ericclapton">Eric Clapton</option>
+                    <option value="deeppurple">Deep Purple</option>
+                    <option value="Metallica">Metallica</option>
+                    <option value="daveweckl">Dave Weckl</option>
+                    <option value="michaeljacjson">Michael Jacjson</option>
                 </select>
                 <hr>
                 <p>Anno</p>
-                <select class="" name="">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                <select class="" name="year">
+                    <option value=""></option>
+                    <option value="1972">1972</option>
+                    <option value="1987">1987</option>
+                    <option value="1988">1988</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="2000">2000</option>
+                    <option value="2002">2002</option>
+                    <option value="2018">2018</option>
                 </select>
             </div>
         </aside>
@@ -51,9 +64,11 @@
         <div class="disc-card">
             <img src="{{url}}" alt="">
             <p class="title">{{title}}</p>
-            <p class="author">{{author}}</p>
-            <p class="genre">{{genre}}</p>
-            <p class="year">{{year}}</p>
+            <div>
+                <p class="author">{{author}}</p>
+                <p class="genre">{{genre}}</p>
+                <p class="year">{{year}}</p>
+            </div>
         </div>
     </script>
     <script src="main.js" charset="utf-8"></script>
