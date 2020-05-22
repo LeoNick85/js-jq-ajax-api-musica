@@ -46,31 +46,11 @@ $(document).ready(function(){
                 for (var i = 0; i < album_list.length; i++) {
                     makeCard(album_list[i]);
                 }
-            } else if  (filter_type == "genre") {
+            } else  {
                 //Per ogni elemento della lista album, creo una card e la aggiungo in html
                 for (var i = 0; i < album_list.length; i++) {
-                    //Registro il valore dell'album sul Genere
-                    var album_element = album_list[i].genre.toLowerCase();
-
-                    if (album_element == filter_value){
-                        makeCard(album_list[i]);
-                    }
-                }
-            } else if  (filter_type == "author") {
-                //Per ogni elemento della lista album, creo una card e la aggiungo in html
-                for (var i = 0; i < album_list.length; i++) {
-                    //Registro il valore dell'album sul Genere
-                    var album_element = album_list[i].author.toLowerCase();
-
-                    if (album_element == filter_value){
-                        makeCard(album_list[i]);
-                    }
-                }
-            } else if  (filter_type == "year") {
-                //Per ogni elemento della lista album, creo una card e la aggiungo in html
-                for (var i = 0; i < album_list.length; i++) {
-                    //Registro il valore dell'album sul Genere
-                    var album_element = album_list[i].year.toString();
+                    // //Registro il valore dell'album
+                    var album_element = album_list[i][filter_type].toLowerCase();
 
                     if (album_element == filter_value){
                         makeCard(album_list[i]);
